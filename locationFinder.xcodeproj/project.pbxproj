@@ -13,6 +13,8 @@
 		280C5B0B2715C234000B8A96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280C5B092715C234000B8A96 /* Main.storyboard */; };
 		280C5B0D2715C23A000B8A96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280C5B0C2715C23A000B8A96 /* Assets.xcassets */; };
 		280C5B102715C23A000B8A96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280C5B0E2715C23A000B8A96 /* LaunchScreen.storyboard */; };
+		280C5B192715C3EA000B8A96 /* SwiftCoroutine in Frameworks */ = {isa = PBXBuildFile; productRef = 280C5B182715C3EA000B8A96 /* SwiftCoroutine */; };
+		280C5B1B2715CD01000B8A96 /* LocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280C5B1A2715CD01000B8A96 /* LocationProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		280C5B0C2715C23A000B8A96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		280C5B0F2715C23A000B8A96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		280C5B112715C23A000B8A96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		280C5B1A2715CD01000B8A96 /* LocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				280C5B192715C3EA000B8A96 /* SwiftCoroutine in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 				280C5B032715C234000B8A96 /* AppDelegate.swift */,
 				280C5B052715C234000B8A96 /* SceneDelegate.swift */,
 				280C5B072715C234000B8A96 /* ViewController.swift */,
+				280C5B1A2715CD01000B8A96 /* LocationProvider.swift */,
 				280C5B092715C234000B8A96 /* Main.storyboard */,
 				280C5B0C2715C23A000B8A96 /* Assets.xcassets */,
 				280C5B0E2715C23A000B8A96 /* LaunchScreen.storyboard */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = locationFinder;
+			packageProductDependencies = (
+				280C5B182715C3EA000B8A96 /* SwiftCoroutine */,
+			);
 			productName = locationFinder;
 			productReference = 280C5B002715C234000B8A96 /* locationFinder.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 280C5AF72715C234000B8A96;
+			packageReferences = (
+				280C5B172715C3EA000B8A96 /* XCRemoteSwiftPackageReference "SwiftCoroutine" */,
+			);
 			productRefGroup = 280C5B012715C234000B8A96 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				280C5B082715C234000B8A96 /* ViewController.swift in Sources */,
+				280C5B1B2715CD01000B8A96 /* LocationProvider.swift in Sources */,
 				280C5B042715C234000B8A96 /* AppDelegate.swift in Sources */,
 				280C5B062715C234000B8A96 /* SceneDelegate.swift in Sources */,
 			);
@@ -360,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		280C5B172715C3EA000B8A96 /* XCRemoteSwiftPackageReference "SwiftCoroutine" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/belozierov/SwiftCoroutine";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		280C5B182715C3EA000B8A96 /* SwiftCoroutine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 280C5B172715C3EA000B8A96 /* XCRemoteSwiftPackageReference "SwiftCoroutine" */;
+			productName = SwiftCoroutine;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 280C5AF82715C234000B8A96 /* Project object */;
 }
